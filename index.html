@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Keratospec Hospital - Hero Section</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+  <div class="relative min-h-screen flex flex-col overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 z-50 w-full bg-[var(--dark-gray)]/70 flex items-center justify-between px-6 py-4">
+
+  <!-- Logo + Hospital Name -->
+  <div class="flex items-center space-x-3">
+    <!-- Logo Image -->
+    <img src="images/keratos.jpg" alt="Keratospec Hospital Logo" class="h-10 w-10 object-contain">
+    <!-- Hospital Name -->
+    <a class="text-xl font-bold text-white" href="#">Keratospec Hospital</a>
+  </div>
+
+  <!-- Hamburger Button (mobile only) -->
+  <button id="hamburger" class="text-white md:hidden focus:outline-none">
+    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </button>
+</header>
+
+
+<!-- Sidebar Navigation -->
+<nav id="sidebar" class="sidebar w-20 bg-[var(--dark-gray)]/30 backdrop-blur-lg fixed h-full left-0 top-0 z-40 transition-transform transform -translate-x-full md:translate-x-0 flex flex-col items-center justify-center py-6 space-y-8">
+  <a href="#hero" title="Home" class="p-3 rounded-full hover:bg-[var(--primary-color)]/20 transition text-white">
+    🏠
+  </a>
+  <a href="#about" title="About Us" class="p-3 rounded-full hover:bg-[var(--primary-color)]/20 transition text-white">
+    ℹ️
+  </a>
+  <a href="#services" title="Services" class="p-3 rounded-full hover:bg-[var(--primary-color)]/20 transition text-white">
+    💉
+  </a>
+  <a href="#doctors" title="Doctors" class="p-3 rounded-full hover:bg-[var(--primary-color)]/20 transition text-white">
+    👨‍⚕️
+  </a>
+  <a href="#testimonials" title="Testimonials" class="p-3 rounded-full hover:bg-[var(--primary-color)]/20 transition text-white">
+    💬
+  </a>
+  <a href="#booking" title="Book Appointment" class="p-3 rounded-full hover:bg-[var(--primary-color)]/20 transition text-white">
+    📅
+  </a>
+</nav>
+
+
+
+    <!-- Hero Section -->
+    <main class="flex-grow pl-20 h-screen overflow-y-scroll snap-y snap-mandatory">
+
+      <!-- Hero Section -->
+<section 
+  id="hero" 
+  class="relative min-h-screen snap-start flex items-center justify-center bg-cover bg-center animate-slide-down"
+  style="background-image: url('images/hosp.jpg');">
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- Left Content -->
+  <div class="relative z-10 max-w-lg">
+    <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight animate-slide-down">
+      Advanced <span class="highlight-text">Eye Care</span> &amp; Surgery
+    </h1>
+
+    <p class="text-base text-[var(--text-secondary)] leading-relaxed mb-6 fade-in-up delay-2">
+      Providing exceptional eye care with cutting-edge technology and a compassionate approach.
+    </p>
+
+    <a href="#booking" 
+      class="bg-[var(--primary-color)] text-white font-medium py-2 px-5 rounded-lg hover:bg-[var(--secondary-color)] transition-colors duration-300 ease-in-out shadow-md bounce-in delay-3">
+      Book an Appointment
+    </a>
+  </div>
+
+  <!-- Right Glass Card -->
+  <div class="relative z-10 hero-card p-8 rounded-2xl shadow-lg w-full max-w-md mt-6 md:mt-0">
+    <h2 class="text-xl font-semibold text-white mb-4">Our Specialties</h2>
+    <ul class="space-y-3 text-[var(--text-secondary)]">
+      <li>✔ Cataract Surgery</li>
+      <li>✔ LASIK & Refractive Surgery</li>
+      <li>✔ Corneal Transplants</li>
+      <li>✔ Glaucoma Treatment</li>
+      <li>✔ Pediatric Eye Care</li>
+    </ul>
+  </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about" class="min-h-screen snap-start bg-[var(--background-color)] text-[var(--text-primary)]">
+
+
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Left Column: Text -->
+    <div class="space-y-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold animate-slide-down">About Us</h2>
+      <p class="text-lg text-[var(--text-secondary)] leading-relaxed animate-slide-down">
+        At Keratospec Hospital, we specialize in advanced eye care and surgery. 
+        Our team of skilled doctors uses cutting-edge technology to provide 
+        precise diagnoses, effective treatments, and compassionate care for 
+        patients of all ages.
+      </p>
+      <p class="text-lg text-[var(--text-secondary)] leading-relaxed animate-slide-down">
+        With years of expertise and a patient-first approach, we are dedicated 
+        to restoring and protecting your vision while ensuring a comfortable 
+        and supportive experience.
+      </p>
+      <a href="/services" class="inline-block bg-[var(--primary-color)] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[var(--secondary-color)] transition-colors duration-300 ease-in-out shadow-lg">
+        Learn More
+      </a>
+    </div>
+
+    <!-- Right Column: Image -->
+    <div class="flex justify-center md:justify-end animate-slide-down">
+      <img src="images/doc&nurse.png" 
+           alt="Eye Care at Hospital"
+           class="rounded-2xl shadow-2xl w-full max-w-md object-cover">
+    </div>
+
+  </div>
+</section>
+<!-- ================= Services Section ================= -->
+<section 
+  id="services" 
+  class="min-h-screen flex items-center justify-center bg-cover bg-center px-6 py-16"
+  style="background-image: linear-gradient(
+      rgba(26, 26, 26, 0.9), 
+      rgba(26, 26, 26, 0.9)
+    ), url('images/hosp-1.jpg');"
+>
+  <div class="max-w-6xl w-full text-center text-white">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 animate-slide-down active">
+      Our <span class="highlight-text">Services</span>
+    </h2>
+
+    <!-- Services Grid -->
+    <div class="grid md:grid-cols-3 gap-10">
+      
+      <!-- Service Card -->
+      <div class="p-6 rounded-2xl bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.15)] shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 animate-slide-down active">
+        <h3 class="text-xl font-semibold mb-3">Cataract Surgery</h3>
+        <p class="text-[var(--text-secondary)] leading-relaxed">
+          Restoring clarity and vision with advanced minimally invasive procedures.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.15)] shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 animate-slide-left active delay-1">
+        <h3 class="text-xl font-semibold mb-3">LASIK & Refractive Surgery</h3>
+        <p class="text-[var(--text-secondary)] leading-relaxed">
+          State-of-the-art laser treatment for clear, spectacle-free vision.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.15)] shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 animate-slide-left active delay-2">
+        <h3 class="text-xl font-semibold mb-3">Pediatric Eye Care</h3>
+        <p class="text-[var(--text-secondary)] leading-relaxed">
+          Gentle and effective care for children’s vision and eye health.
+        </p>
+      </div>
+</section>
+    
+    <!-- ================= Doctors Section ================= -->
+<section 
+  id="doctors" 
+  class="min-h-screen flex items-center justify-center bg-cover bg-center px-6 py-16"
+  style="background-image: linear-gradient(
+      rgba(26, 26, 26, 0.9), 
+      rgba(26, 26, 26, 0.9)
+    ), url('https://images.unsplash.com/photo-1584515933487-779824d29309?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');"
+>
+  <div class="max-w-6xl w-full text-center text-white">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 animate-slide-down active">
+      Meet Our <span class="highlight-text">Doctors</span>
+    </h2>
+
+    <!-- Doctors Grid -->
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+      
+      <!-- Doctor Card -->
+      <div class="p-6 rounded-2xl bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.15)] shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 animate-slide-left active">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Doctor John" class="w-28 h-28 mx-auto rounded-full border-4 border-[var(--primary-color)] mb-4">
+        <h3 class="text-xl font-semibold">Dr. John Smith</h3>
+        <p class="text-[var(--text-secondary)] text-sm mb-3">Ophthalmic Surgeon</p>
+        <p class="text-[var(--text-secondary)] leading-relaxed">
+          Specializes in cataract and refractive surgeries with 15+ years of experience.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.15)] shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 animate-slide-left active delay-1">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Doctor Sarah" class="w-28 h-28 mx-auto rounded-full border-4 border-[var(--primary-color)] mb-4">
+        <h3 class="text-xl font-semibold">Dr. Sarah Johnson</h3>
+        <p class="text-[var(--text-secondary)] text-sm mb-3">Pediatric Ophthalmologist</p>
+        <p class="text-[var(--text-secondary)] leading-relaxed">
+          Expert in children’s eye care, early detection, and treatment of eye conditions.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.15)] shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 animate-slide-left active delay-2">
+        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Doctor Alex" class="w-28 h-28 mx-auto rounded-full border-4 border-[var(--primary-color)] mb-4">
+        <h3 class="text-xl font-semibold">Dr. Alex Brown</h3>
+        <p class="text-[var(--text-secondary)] text-sm mb-3">Glaucoma Specialist</p>
+        <p class="text-[var(--text-secondary)] leading-relaxed">
+          Focused on glaucoma management and innovative treatment solutions.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS SECTION ================= -->
+<section 
+  id="testimonials" 
+  class="min-h-screen snap-start flex flex-col items-center justify-center text-center px-6 py-16 bg-cover bg-center"
+  style="background-image: url('https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?auto=format&fit=crop&w=2070&q=80');"
+>
+  <div class="max-w-4xl">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-10 text-white">
+      What Our <span class="highlight-text">Patients</span> Say
+    </h2>
+
+    <!-- Testimonials Grid -->
+    <div class="grid gap-8 md:grid-cols-3">
+      
+      <!-- Card 1 -->
+      <div class="p-6 rounded-2xl shadow-lg bg-[rgba(0,0,0,0.6)] border border-[rgba(17,125,212,0.4)] testimonial-card animate-slide-down">
+        <p class="text-[var(--text-secondary)] italic mb-4">
+          “The team at Keratospec transformed my vision. I feel like I have a new life.”
+        </p>
+        <h4 class="text-white font-semibold">– Sarah M.</h4>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="p-6 rounded-2xl shadow-lg bg-[rgba(0,0,0,0.6)] border border-[rgba(17,125,212,0.4)] testimonial-card">
+        <p class="text-[var(--text-secondary)] italic mb-4">
+          “Professional, caring, and truly experts in their field. Highly recommend.”
+        </p>
+        <h4 class="text-white font-semibold">– David K.</h4>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="p-6 rounded-2xl shadow-lg bg-[rgba(0,0,0,0.6)] border border-[rgba(17,125,212,0.4)] testimonial-card">
+        <p class="text-[var(--text-secondary)] italic mb-4">
+          “From consultation to surgery, the experience was seamless and reassuring.”
+        </p>
+        <h4 class="text-white font-semibold">– Anita R.</h4>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Booking Section -->
+<section id="booking" class="min-h-screen snap-start flex items-center justify-center bg-cover bg-center relative">
+  <div class="absolute inset-0 bg-black/60"></div> <!-- dark overlay -->
+
+  <div class="relative z-10 max-w-3xl w-full bg-[var(--dark-gray)]/40 backdrop-blur-lg rounded-2xl shadow-lg p-8 border border-[var(--primary-color)]/40 booking-card">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6 text-center">
+      Book an Appointment
+    </h2>
+    <form class="space-y-5">
+      <div>
+        <label for="name" class="block text-[var(--text-secondary)] mb-1">Full Name</label>
+        <input type="text" id="name" name="name" 
+          class="w-full p-3 rounded-lg bg-[var(--background-color)] border border-[var(--light-gray)] focus:border-[var(--primary-color)] focus:outline-none">
+      </div>
+      <div>
+        <label for="email" class="block text-[var(--text-secondary)] mb-1">Email</label>
+        <input type="email" id="email" name="email" 
+          class="w-full p-3 rounded-lg bg-[var(--background-color)] border border-[var(--light-gray)] focus:border-[var(--primary-color)] focus:outline-none">
+      </div>
+      <div>
+        <label for="date" class="block text-[var(--text-secondary)] mb-1">Preferred Date</label>
+        <input type="date" id="date" name="date" 
+          class="w-full p-3 rounded-lg bg-[var(--background-color)] border border-[var(--light-gray)] focus:border-[var(--primary-color)] focus:outline-none">
+      </div>
+      <div>
+        <label for="service" class="block text-[var(--text-secondary)] mb-1">Service</label>
+        <select id="service" name="service" 
+          class="w-full p-3 rounded-lg bg-[var(--background-color)] border border-[var(--light-gray)] focus:border-[var(--primary-color)] focus:outline-none">
+          <option value="">Select a service</option>
+          <option>Cataract Surgery</option>
+          <option>LASIK & Refractive Surgery</option>
+          <option>Glaucoma Treatment</option>
+          <option>Pediatric Eye Care</option>
+        </select>
+      </div>
+      <button type="submit" 
+        class="w-full bg-[var(--primary-color)] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[var(--secondary-color)] transition duration-300 ease-in-out shadow-md">
+        Confirm Booking
+      </button>
+    </form>
+  </div>
+</section>
+
+    </main>
+  </div>
+
+  <!-- JS File -->
+  <script src="script.js"></script>
+</body>
+</html>
